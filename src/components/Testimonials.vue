@@ -32,21 +32,21 @@
         <div class="test-sec">
             <h5>Testimonials</h5>
             <div class="testimonials">
-                <div class="card-outer">
+                <div v-for="person in arrTestimonials" :key="person" class="card-outer">
                     <div class="testimonial t1">
                         <div class="front">
                             <div class="testimgfront"></div>
-                            <h6>Deno Rautenbach</h6>
-                            <h6>Colleague</h6>
+                            <h6>{{person.name}}</h6>
+                            <h6>{{person.relationship}}</h6>
                         </div>
                         <div class="back">
-                            <h6>Deno Rautenbach</h6>
-                            <h6>Colleague</h6>
-                            <p>Thandolwethu has got swag, besides his coolness factor, his keen attention to detail in his code makes for awesome looking websites. He's also the most dependable source of help I've encountered. Always happy to help. Whenever I'm stuck I he's the one to help.</p>
+                            <h6>{{person.name}}</h6>
+                            <h6>{{person.relationship}}</h6>
+                            <p>{{person.testimonial}}</p>
                         </div>
                     </div>
                 </div>
-                <div class="card-outer">
+                <!-- <div class="card-outer">
                     <div class="testimonial t2">
                         <div class="front">
                             <div class="testimgfront"></div>
@@ -102,7 +102,7 @@
                             <p>Thandolwethu is a great person to work and converse with, works hard on completing his tasks and developing his skills.</p>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
             </div>
             
@@ -111,10 +111,17 @@
 </template>
 <script>
 export default {
-    name: 'testimonials'
+    name: 'testimonials',
+    data() {
+        return {
+            arrTestimonials : [
+                {name:'Deno Rautenbach', relationship: 'Colleague', testimonial: "Thandolwethu has got swag, besides his coolness factor, his keen attention to detail in his code makes for awesome looking websites. He's also the most dependable source of help I've encountered. Always happy to help. Whenever I'm stuck I he's the one to help."},
+                {name:'Tyvon April', relationship: 'Colleague', testimonial: "Thando is a very innovative person, he always thinks outside the box. When faced with a problem he will stop at nothing to find the solution. I enjoy working with him."},
+                {name:'Deno Rautenbach', relationship: 'Colleague', testimonial: "Thandolwethu has got swag, besides his coolness factor, his keen attention to detail in his code makes for awesome looking websites. He's also the most dependable source of help I've encountered. Always happy to help. Whenever I'm stuck I he's the one to help."}
+            ]
+        }
+    }
 }
-
-let testimonials 
 </script>
 <style scoped>
 .test-sec {

@@ -1,6 +1,7 @@
 <template lang="">
     <div class="page" id="skills">
         <div class="skills-sec">
+            
             <div class="skills-text">
                 <p>My skills include <br>HTML, CSS, JavaScript, <br>bootstrap and python</p>
             </div>
