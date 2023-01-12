@@ -5,22 +5,37 @@
                 
                 <div class="carousel-inner h-80">
                     <h3>Previous projects</h3>
-                    <div class="carousel-item active ">
+                    <div v-for="project in projects.slice(4)"  :key="project" class="carousel-item active ">
                         <div class="c-item ci1 ">
-                            <h4>Flip card</h4>
+                            <h4>{{project.name}}</h4>
                             <section class="illustrations">
-                                <section class="image img1"></section>
-                                <section class="image img2"></section>
+                                <img class="image img1" :src=project.picture1>
+                                <img class="image img2" :src=project.picture2>
                             </section>
                             <section class="links">
-                                <a href="https://glistening-smakager-136127.netlify.app/" target="_blank">Visit site</a>
-                                <a href="https://github.com/Zweleth/flipCard.git">Github file</a>
+                                <a :href=project.netlifyLink target="_blank">Visit site</a>
+                                <a :href=project.githubLink target="_blank">Github file</a>
                             </section>
                             
                         </div>
                     
                     </div>
-                    <div class="carousel-item ">
+                    <div v-for="project in projects.slice(0,4)"  :key="project" class="carousel-item">
+                        <div class="c-item ci1 ">
+                            <h4>{{project.name}}</h4>
+                            <section class="illustrations">
+                                <img class="image img1" :src=project.picture1>
+                                <img class="image img2" :src=project.picture2>
+                            </section>
+                            <section class="links">
+                                <a :href=project.netlifyLink target="_blank">Visit site</a>
+                                <a :href=project.githubLink target="_blank">Github file</a>
+                            </section>
+                            
+                        </div>
+                    
+                    </div>
+                    <!-- <div class="carousel-item ">
                         <div class="c-item ci2">
                             <h4>ecommerce-website</h4>
                             <section class="illustrations">
@@ -77,7 +92,7 @@
                             </section>
                         </div>
                     
-                    </div>
+                    </div> -->
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon " aria-hidden="true"></span>
@@ -93,7 +108,48 @@
 </template>
 <script>
 export default {
-    name: 'carousel'
+    name: 'carousel',
+    data() {
+        return {
+            projects : [
+                {
+                    name:'Flip card',
+                    githubLink: 'https://github.com/Zweleth/flipCard.git', 
+                    netlifyLink: "https://glistening-smakager-136127.netlify.app/",
+                    picture1: "https://i.postimg.cc/19VZywTm/Flip-Card-website.png",
+                    picture2: "https://i.postimg.cc/bJ4RRYzt/Screenshot-1.png"
+                },
+                {
+                    name:'ecommerce-website',
+                    githubLink: 'https://github.com/Zweleth/ecommerce-website.git', 
+                    netlifyLink: "https://hallogear.netlify.app/",
+                    picture1: "https://i.postimg.cc/rsFyJHTX/hall2.png",
+                    picture2: "https://i.postimg.cc/pTVtbn6K/modal.png"
+                },
+                {
+                    name:'Online cookie store',
+                    githubLink: 'https://github.com/Zweleth/exercise.git', 
+                    netlifyLink: "https://cookiesncream.netlify.app/",
+                    picture1: "https://i.postimg.cc/HnFdHhQM/Screenshot-3.png",
+                    picture2: "https://i.postimg.cc/pLLrZgsW/Screenshot-4.png"
+                },
+                {
+                    name:'Calculator',
+                    githubLink: 'https://github.com/Zweleth/Calculator.git', 
+                    netlifyLink: "https://thandolwethu-calculator.netlify.app/",
+                    picture1: "https://i.postimg.cc/05z3FpwL/Calculator-Pic.png",
+                    picture2: "https://i.postimg.cc/qqwJCRrt/Calculation.png"
+                },
+                {
+                    name:'Point of sale',
+                    githubLink: 'https://github.com/Zweleth/PointOfSale.git', 
+                    netlifyLink: "https://thando-pos.netlify.app/",
+                    picture1: "https://i.postimg.cc/TPKzvSNv/POS-products.png",
+                    picture2: "https://i.postimg.cc/J0FXvssL/POS-cart.png"
+                }
+            ]
+        }
+    }
 }
 </script>
 <style scoped>
@@ -115,7 +171,7 @@ export default {
 .c-item .image {
     border: 2px solid rgba(128, 128, 128, 0.8);
     border-radius: 2px;
-    width: 20rem;
+    width: 23rem;
     height: 13rem;
 
 }
