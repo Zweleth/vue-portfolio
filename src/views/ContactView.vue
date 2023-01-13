@@ -26,29 +26,7 @@ export default {
 }
 </script>
 <style scoped>
-.sec4 {
-    justify-content: space-between;
-    justify-content: center;
-}
 
-.dh {
-    display: flex;
-    padding-right: 3rem;
-    border: none;
-    border-right: 3px solid gray;
-    height: 70vh;
-    align-items: center;
-    margin-right: 3rem;
-}
-
-
-
-.details {
-    display: flex;
-    justify-content: space-between;
-    width: 35rem;
-
-}
 
 
 

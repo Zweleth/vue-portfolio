@@ -14,51 +14,6 @@ export default {
 }
 </script>
 <style scoped>
-.icons i {
-    display: flex;
-    font-size: x-large;
-    width: 1em;
-    display: flex;
-    flex-direction: row;
 
-}
-
-i p {
-    color: rgba(0, 255, 255, 0);
-    font-size: medium;
-    justify-self: center;
-}
-
-.icons i:hover p {
-    color: rgba(0, 255, 255, 1);
-    transition: 0.5s;
-}
-
-.icons i:hover {
-    animation: BlockPop 0.6s ease-in-out;
-    color: aqua;
-
-}
-
-.icons {
-    gap: 30px;
-    display: flex;
-    flex-direction: column;
-}
-
-@keyframes BlockPop {
-    0% {
-        scale: 1;
-    }
-
-    50% {
-        scale: 1.15;
-    }
-
-    100% {
-        scale: 1.05;
-    }
-
-}
 
 </style>
