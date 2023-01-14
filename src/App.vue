@@ -4,6 +4,9 @@
   <main>
     <router-view/>
   </main>
+  <footer>
+    <initials></initials>
+  </footer>
   <initials></initials>
   
 </template>
@@ -1304,7 +1307,7 @@ header {
 }
 
 /* */
-@media screen and (min-width:421) and (max-width:720px) {
+@media screen and (min-width:421px) and (max-width:720px) {
     
   main {
       flex-direction: column;

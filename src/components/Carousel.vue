@@ -5,7 +5,7 @@
                 
                 <div class="carousel-inner h-80">
                     <h3>Previous projects</h3>
-                    <div v-for="project in projects.slice(0,1)"  :key="project" class="carousel-item active ">
+                    <div v-for="project in projects.slice(5)"  :key="project" class="carousel-item active ">
                         <div class="c-item ci1 ">
                             <h4>{{project.name}}</h4>
                             <section class="illustrations">
@@ -20,7 +20,7 @@
                         </div>
                     
                     </div>
-                    <div v-for="project in projects.slice(1)"  :key="project" class="carousel-item">
+                    <div v-for="project in projects.slice(0,5)"  :key="project" class="carousel-item">
                         <div class="c-item ci1 ">
                             <h4>{{project.name}}</h4>
                             <section class="illustrations">
