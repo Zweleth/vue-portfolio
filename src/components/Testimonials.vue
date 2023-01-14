@@ -143,7 +143,7 @@ export default {
                     name:'Kelebogile Nobomvu', 
                     relationship: 'Colleague', 
                     testimonial: "Thandolwethu is a great person to work and converse with, works hard on completing his tasks and developing his skills.",
-                    picture: ""
+                    picture: "background-image: url(https://i.postimg.cc/BvLfcyCD/20201112-003649.jpg);"
                 }
             ]
         }

@@ -1,0 +1,88 @@
+[debug] [2023-01-13T13:05:19.107Z] ----------------------------------------------------------------------
+[debug] [2023-01-13T13:05:19.109Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Admin\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-01-13T13:05:19.109Z] CLI Version:   11.20.0
+[debug] [2023-01-13T13:05:19.110Z] Platform:      win32
+[debug] [2023-01-13T13:05:19.110Z] Node Version:  v16.17.1
+[debug] [2023-01-13T13:05:19.111Z] Time:          Fri Jan 13 2023 15:05:19 GMT+0200 (South Africa Standard Time)
+[debug] [2023-01-13T13:05:19.111Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-01-13T13:05:19.190Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-01-13T13:05:19.191Z] > authorizing via signed-in user (zwebeko@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Admin
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-01-13T13:05:37.750Z] Using project from CLI flag: vue-portfolio-fff7b
+[debug] [2023-01-13T13:05:37.753Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/vue-portfolio-fff7b [none]
+[debug] [2023-01-13T13:05:38.647Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/vue-portfolio-fff7b 200
+[debug] [2023-01-13T13:05:38.648Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/vue-portfolio-fff7b {"projectId":"vue-portfolio-fff7b","projectNumber":"314515744563","displayName":"vue-portfolio","name":"projects/vue-portfolio-fff7b","resources":{"hostingSite":"vue-portfolio-fff7b"},"state":"ACTIVE","etag":"1_00c505d4-c80f-4f9d-a1c8-1a65e6fb421b"}
+[info] i  Using project vue-portfolio-fff7b (vue-portfolio) 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2023-01-13T13:12:12.178Z] ----------------------------------------------------------------------
+[debug] [2023-01-13T13:12:12.180Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Admin\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-01-13T13:12:12.180Z] CLI Version:   11.20.0
+[debug] [2023-01-13T13:12:12.180Z] Platform:      win32
+[debug] [2023-01-13T13:12:12.180Z] Node Version:  v16.17.1
+[debug] [2023-01-13T13:12:12.181Z] Time:          Fri Jan 13 2023 15:12:12 GMT+0200 (South Africa Standard Time)
+[debug] [2023-01-13T13:12:12.182Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-01-13T13:12:12.257Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-01-13T13:12:12.262Z] > authorizing via signed-in user (zwebeko@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Admin
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-01-13T13:12:25.573Z] Using project from CLI flag: vue-portfolio-fff7b
+[debug] [2023-01-13T13:12:25.576Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/vue-portfolio-fff7b [none]
+[debug] [2023-01-13T13:12:26.270Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/vue-portfolio-fff7b 200
+[debug] [2023-01-13T13:12:26.270Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/vue-portfolio-fff7b {"projectId":"vue-portfolio-fff7b","projectNumber":"314515744563","displayName":"vue-portfolio","name":"projects/vue-portfolio-fff7b","resources":{"hostingSite":"vue-portfolio-fff7b"},"state":"ACTIVE","etag":"1_00c505d4-c80f-4f9d-a1c8-1a65e6fb421b"}
+[info] i  Using project vue-portfolio-fff7b (vue-portfolio) 
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 

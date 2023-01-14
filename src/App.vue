@@ -1304,7 +1304,7 @@ header {
 }
 
 /* */
-@media screen and (max-width:720px) {
+@media screen and (min-width:421) and (max-width:720px) {
     
   main {
       flex-direction: column;
